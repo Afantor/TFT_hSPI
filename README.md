@@ -10,7 +10,35 @@ You can take this one step further and have your own setup select file and then 
 #include <../TFT_eSPI_Setups/my_setup_select.h>
 ```
 To select a new setup you then edit your own my_setup_select.h file (which will not get over-written during an upgrade).
+# Default
+#### Pinout
 
+*We have several kinds of M5Cores, There is [their difference in schematic](https://github.com/m5stack/M5-Schematic/blob/master/Core/hardware_difference_between_cores.md).*
+
+**LCD(ili9341) & Touch(XPT2046)**
+
+*LCD Resolution: 320x240*
+
+<table>
+ <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO12</td><td>GPIO14</td><td>GPIO15</td><td>GPIO2</td><td>GPIO4</td><td>GPIO26</td><td>GPIO32</td></tr>
+ <tr><td>ILI9341</td><td>MOSI</td><td>MISO</td><td>SCLK</td><td>CS</td><td>DC</td><td>RST</td><td>BL</td><td> </td></tr>
+ <tr><td>XPT2046</td><td>MOSI</td><td>MISO</td><td>SCLK</td><td> </td><td> </td><td> </td><td> </td><td>CS</td></tr>
+
+</table>
+
+**Button **
+
+<table>
+ <tr><td>ESP32 Chip</td><td>GPIO34</td><td>GPIO35</td><td>GPIO36</td></tr>
+ <tr><td>Button Pin</td><td>BUTTON A</td><td>BUTTON B</td><td>BUTTON C</td></tr>
+</table>
+
+**TF Card**
+
+<table>
+ <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO5</td></tr>
+ <tr><td>TF Card</td><td>MOSI</td><td>MISO</td><td>SCLK</td><td>CS</td></tr>
+</table>
 # News
 1. The library now supports SPI DMA transfers for both ESP32 and STM32 processors. The DMA Test examples now work on the ESP32 for SPI displays (excluding RPi type and ILI9488).
 
