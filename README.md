@@ -13,7 +13,7 @@ To select a new setup you then edit your own my_setup_select.h file (which will 
 # Default
 #### Pinout
 
-*We have several kinds of M5Cores, There is [their difference in schematic](https://github.com/m5stack/M5-Schematic/blob/master/Core/hardware_difference_between_cores.md).*
+*We have several kinds of ESP32-DevKit.*
 
 **LCD(ili9341) & Touch(XPT2046)**
 
@@ -26,7 +26,7 @@ To select a new setup you then edit your own my_setup_select.h file (which will 
 
 </table>
 
-**Button **
+**Button**
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO34</td><td>GPIO35</td><td>GPIO36</td></tr>
