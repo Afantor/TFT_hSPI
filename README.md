@@ -39,6 +39,7 @@ To select a new setup you then edit your own my_setup_select.h file (which will 
  <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO5</td></tr>
  <tr><td>TF Card</td><td>MOSI</td><td>MISO</td><td>SCLK</td><td>CS</td></tr>
 </table>
+
 # News
 1. The library now supports SPI DMA transfers for both ESP32 and STM32 processors. The DMA Test examples now work on the ESP32 for SPI displays (excluding RPi type and ILI9488).
 
